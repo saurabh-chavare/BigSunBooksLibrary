@@ -29,7 +29,7 @@ namespace BigSun_Application.Data
                 .IsUnique();
 
             modelBuilder.Entity<BorrowRecord>()
-                .HasKey(br => br.BorrowId);  // Explicitly set primary key
+                .HasKey(br => br.BorrowId);  
         }
 
     }

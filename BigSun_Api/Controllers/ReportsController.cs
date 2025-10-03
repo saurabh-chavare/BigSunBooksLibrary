@@ -18,7 +18,6 @@ namespace BigSun_Api.Controllers
             _context = context;
         }
 
-        // GET /api/reports/top-borrowed → Top 5 borrowed books
         [HttpGet("top-borrowed")]
         public async Task<IActionResult> TopBorrowed()
         {
@@ -38,7 +37,6 @@ namespace BigSun_Api.Controllers
             return Ok(topBooks);
         }
 
-        // GET /api/reports/overdue → List overdue books
         [HttpGet("overdue")]
         public async Task<IActionResult> Overdue()
         {

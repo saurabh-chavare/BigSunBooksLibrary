@@ -8,7 +8,7 @@ namespace BigSun_Modal.Models
 {
     public class BorrowRecord
     {
-        public int BorrowId { get; set; }  // Primary key
+        public int BorrowId { get; set; }  
 
         public int MemberId { get; set; }
         public Member Member { get; set; } = null!;

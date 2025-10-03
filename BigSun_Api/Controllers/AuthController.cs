@@ -27,7 +27,6 @@ namespace BigSun_Api.Controllers
             if (string.IsNullOrWhiteSpace(request.Username) || string.IsNullOrWhiteSpace(request.Password))
                 return Unauthorized();
 
-            // Demo-only: accept any non-empty username/password.
             var jwtSection = _configuration.GetSection("Jwt");
             var key = jwtSection.GetValue<string>("Key") ?? string.Empty;
             var issuer = jwtSection.GetValue<string>("Issuer");
