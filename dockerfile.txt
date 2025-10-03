@@ -2,12 +2,16 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-# Copy everything
+# Copy only project file first for caching
+COPY BigSun_Api/BigSun_Api.csproj BigSun_Api/
+RUN dotnet restore BigSun_Api/BigSun_Api.csproj
+
+# Copy rest of the code
 COPY . .
 
-# Restore and build
-RUN dotnet restore BigSun_Api/BigSun_Api.csproj
-RUN dotnet publish BigSun_Api/BigSun_Api.csproj -c Release -o /app/publish
+# Build and publish
+WORKDIR /src/BigSun_Api
+RUN dotnet publish -c Release -o /app/publish
 
 # Runtime image
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
