@@ -1,0 +1,6 @@
+@BigSun_Api_HostAddress = http://localhost:5294
+
+GET {{BigSun_Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

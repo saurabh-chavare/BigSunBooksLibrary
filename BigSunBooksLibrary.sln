@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36310.24
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LibrarySolution", "LibrarySolution", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigSun_Modal", "BigSun_Modal\BigSun_Modal.csproj", "{5FABD1E2-FD28-4495-96B6-6360C6C64258}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ModalLayer", "ModalLayer", "{08905553-E8C5-4C45-928C-A0745A5BE4B7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApplicationLayer", "ApplicationLayer", "{EA658D2F-4AB3-45D4-92F5-C90583ADB53C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigSun_Application", "BigSun_Application\BigSun_Application.csproj", "{FBA8CDE4-77BC-40F2-9D7D-901B2656FAF4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APILayer", "APILayer", "{AD77C9B5-8F2B-41E2-98B3-D42086246A00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigSun_Api", "BigSun_Api\BigSun_Api.csproj", "{CA52522E-81A5-4D9D-AE15-4875F63BFEAB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PartA_SQL", "PartA_SQL", "{AD630767-8614-44DA-B2D4-3FF0D8BAC2E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartA-SQLTest", "PartA-SQLTest\PartA-SQLTest.csproj", "{9B689AE0-2209-4BD3-995A-27D916234FE5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5FABD1E2-FD28-4495-96B6-6360C6C64258}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FABD1E2-FD28-4495-96B6-6360C6C64258}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FABD1E2-FD28-4495-96B6-6360C6C64258}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FABD1E2-FD28-4495-96B6-6360C6C64258}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBA8CDE4-77BC-40F2-9D7D-901B2656FAF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBA8CDE4-77BC-40F2-9D7D-901B2656FAF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBA8CDE4-77BC-40F2-9D7D-901B2656FAF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBA8CDE4-77BC-40F2-9D7D-901B2656FAF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA52522E-81A5-4D9D-AE15-4875F63BFEAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA52522E-81A5-4D9D-AE15-4875F63BFEAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA52522E-81A5-4D9D-AE15-4875F63BFEAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA52522E-81A5-4D9D-AE15-4875F63BFEAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B689AE0-2209-4BD3-995A-27D916234FE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B689AE0-2209-4BD3-995A-27D916234FE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B689AE0-2209-4BD3-995A-27D916234FE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B689AE0-2209-4BD3-995A-27D916234FE5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5FABD1E2-FD28-4495-96B6-6360C6C64258} = {08905553-E8C5-4C45-928C-A0745A5BE4B7}
+		{08905553-E8C5-4C45-928C-A0745A5BE4B7} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{EA658D2F-4AB3-45D4-92F5-C90583ADB53C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{FBA8CDE4-77BC-40F2-9D7D-901B2656FAF4} = {EA658D2F-4AB3-45D4-92F5-C90583ADB53C}
+		{AD77C9B5-8F2B-41E2-98B3-D42086246A00} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{CA52522E-81A5-4D9D-AE15-4875F63BFEAB} = {AD77C9B5-8F2B-41E2-98B3-D42086246A00}
+		{9B689AE0-2209-4BD3-995A-27D916234FE5} = {AD630767-8614-44DA-B2D4-3FF0D8BAC2E6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {60B738F3-2895-4E03-92A9-FA385AA2DDC6}
+	EndGlobalSection
+EndGlobal
